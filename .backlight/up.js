@@ -5,7 +5,9 @@ fs = require('fs');
 var devices = HID.devices();
 device = new HID.HID(4292,33742);
 
-fs.readFile('/Users/timothy/.backlight/level', 'utf8', function (err,data) {
+path = '/Users/timothy/.backlight/level';
+
+fs.readFile(path, 'utf8', function (err,data) {
 	if (err) {
 		return console.log(err);
 	}
@@ -13,7 +15,7 @@ fs.readFile('/Users/timothy/.backlight/level', 'utf8', function (err,data) {
 	if (data < 240)
 		data = data + 24;
 	device.write([6, data]);
-	fs.writeFile('/Users/timothy/.backlight/level', data, (err) => {
+	fs.writeFile(path, data, (err) => {
 		if (err) throw err;
 	});
 });
