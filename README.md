@@ -14,4 +14,4 @@ or
 node ~/.backlight/down.js
 ```
 ## Compatability
-1. Tested on Mojave and Catalina
+Tested on Mojave and Catalina
