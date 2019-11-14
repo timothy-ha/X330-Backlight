@@ -13,7 +13,7 @@ fs.readFile(path, 'utf8', function (err,data) {
 	}
 	data = parseInt(data);
 	if (data < 240)
-		data = data + 24;
+		data = data + 16;
 	device.write([6, data]);
 	fs.writeFile(path, data, (err) => {
 		if (err) throw err;
