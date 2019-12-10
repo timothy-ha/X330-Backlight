@@ -13,5 +13,5 @@ or
 ```bash
 node ~/.backlight/down.js
 ```
-## Compatability
+## Compatibility
 Tested on Mojave and Catalina
