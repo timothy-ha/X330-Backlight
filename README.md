@@ -10,7 +10,7 @@ wget -P ~/ https://github.com/timothy-ha/X330-Backlight/tree/master/.backlight
 ```js
 path = '~/.backlight/level';
 ```
-3. Use [iCanHazShortcut](https://github.com/deseven/icanhazshortcut) to link keys to "up.js" and "down.js".
+3. Use [iCanHazShortcut](https://github.com/deseven/icanhazshortcut) to map keys to "up.js" and "down.js".
 
 ```bash
 node ~/.backlight/up.js
