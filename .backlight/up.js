@@ -5,7 +5,7 @@ fs = require('fs');
 var devices = HID.devices();
 device = new HID.HID(4292,33742);
 
-path = '/Users/timothy/.backlight/level';
+path = '/Users/NAME/.backlight/level';
 
 fs.readFile(path, 'utf8', function (err, data) {
 	if (err) return console.log(err);
